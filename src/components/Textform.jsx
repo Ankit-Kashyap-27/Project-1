@@ -50,7 +50,7 @@ const Textform = (props) => {
   const wordCount = text.trim().length === 0 ? 0 : text.trim().split(/\s+/).length;
 
   return (
-    <div className="mt-[8vh]">
+    <div className="mt-[8vh] ">
       <div className="text-3xl font-semibold m-3">
         <h1>Enter the Text to Analyze Below</h1>
       </div>

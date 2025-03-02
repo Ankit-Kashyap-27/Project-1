@@ -5,7 +5,7 @@ import Textform from './components/Textform'
 import About from './components/About'
 import Alert from './components/Alert'
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [isDarkmode, setisDarkmode] = useState(false);
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
 
-      <Router>
+      {/* <Router> */}
         <div className="">
           <Navbar title="TestUtils" mode={isDarkmode} handleSlide={handleSlide} />
 
@@ -43,16 +43,18 @@ function App() {
         </div>
 
         <div className=" container flex  flex-col items-center  ">
-          <Routes>
+          {/* <Routes> */}
 
-            <Route exact path="/" element={<Textform mode={isDarkmode} showAlert={showAlert} />} />
+            {/* <Route exact path="/" element={<Textform mode={isDarkmode} showAlert={showAlert} />} /> */}
+            <Textform mode={isDarkmode} showAlert={showAlert} />
 
-            <Route exact path="/about" element={<About mode={isDarkmode} />} />
+            {/* <Route exact path="/about" element={<About mode={isDarkmode} />} /> */}
+            <About mode={isDarkmode} />
 
-          </Routes>
+          {/* </Routes> */}
         </div>
 
-      </Router>
+      {/* </Router> */}
     </>
   )
 }

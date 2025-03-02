@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 // import PropTypes from 'prop-types'
 import sun from "../assets/sun.svg"
 import moon from "../assets/moon.svg"
-import { Link } from 'react-router'
+// import { Link } from 'react-router'
 
 
 const Navbar = (props) => {
@@ -15,8 +15,8 @@ const Navbar = (props) => {
                 <ul>
 
                     <li className='text-lg  '>
-                        <Link className='mx-3  duration-100 hover:border-b-2 hover:border-b-black ' to="/">home</Link>  
-                        <Link className='mx-3  duration-100 hover:border-b-2 hover:border-b-black ' to="/About">About</Link>
+                        <a className='mx-3  duration-100 hover:border-b-2 hover:border-b-black ' href="/">home</a>  
+                        {/* <a className='mx-3  duration-100 hover:border-b-2 hover:border-b-black ' href="/About">About</a> */}
 
 
                     </li>
